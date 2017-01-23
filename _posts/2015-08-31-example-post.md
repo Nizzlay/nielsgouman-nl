@@ -4,7 +4,7 @@ title: 'My First Post on Jekyll'
 date: 2015-08-31 13:26:34
 categories: blog development
 tags: cats dogs code
-featured_image: 'http://placekitten.com/1500/1000'
+featured_image: 'http://orig02.deviantart.net/5929/f/2012/095/e/f/vegito_by_jamey4-d4v37rn.png'
 lead_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores quisquam id sunt, a architecto molestias velit, distinctio quidem non, nostrum provident quibusdam enim. Neque ipsam temporibus commodi facere minima.'
 ---
 
