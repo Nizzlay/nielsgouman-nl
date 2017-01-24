@@ -1,31 +1,4 @@
 /*******************************************
-3ColorResume
-Author: office@kamsolutions.pl
-*******************************************/
-/*******************************************
-FONTS
-*******************************************/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-/*******************************************
-SETTINGS
-*******************************************/
-@charset "utf-8";
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
-/*******************************************
-BODY
-*******************************************/
-body{
-  font-family: 'Open Sans', Arial, Tahoma;
-  font-weight: 400;
-  font-size: 1em;
-  color: #363636;
-  background: #ededed;
-}
-/*******************************************
 CONTAINER
 *******************************************/
 .container{
@@ -52,54 +25,6 @@ PHOTO (AVATAR)
   width: 150px;
   height: 150px;
   border-radius: 50%;
-}
-#text-header h1{
-  margin: 0;
-  padding: 0;
-  font-size: 2.4em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-#text-header h1::first-line{
-  font-size: 1.5em;
-  letter-spacing: -4px;
-  font-weight: 800;
-  line-height: 1.5em;
-}
-#text-header h1 span{
-  color: #F0563D;
-}
-#text-header h1 sup{
-  opacity: 0.5;
-}
-#text-header:after{
-  width: 100%;
-  height: 3px;
-  background: url(../img/line.png);
-  margin-top: 15px;
-  content: '';
-  display: block;
-}
-/*******************************************
-DEFAULT BOX
-*******************************************/
-.box{
-  margin-bottom: 15px;
-}
-.box h2{
-  color: #EC7263;
-  font-size: 1.8em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.box h2:before{
-  content: '//';
-  margin-right: 5px;
-}
-.box p{
-  font-size: 1.3em;
-  line-height: 1.5em;
 }
 /*******************************************
 EDUCATION
@@ -137,8 +62,6 @@ EDUCATION
   width: 10%;
   background: #fff;
   padding: 10px;
-  font-size: 1.5em;
-  font-weight: 700;
   display: inline-block;
 }
 #education .description{
@@ -164,13 +87,10 @@ EDUCATION
   pointer-events: none;
 }
 #education .description h3{
-  font-size: 1.6em;
   margin: 0;
   padding: 0;
-  font-weight: 700;
 }
 #education .description p{
-  font-size: 1.3em;
   margin-top: 5px;
   padding: 0;
 }
@@ -179,22 +99,6 @@ EXPERIENCES
 *******************************************/
 .job{
   margin-bottom: 15px;
-}
-.job .where{
-  font-size: 1.4em;
-  font-weight: bold;
-}
-.job .year{
-  font-size: 1.3em;
-  opacity: 0.7;
-}
-.job .profession{
-  font-size: 1.6em;
-  font-weight: bold;
-}
-.job .description{
-  font-size: 1.2em;
-  line-height: 1.5em;
 }
 /*******************************************
 CONTACT
@@ -212,24 +116,12 @@ CONTACT
 .contact-item:last-child .icon{
   border-bottom: none;
 }
-.contact-item .fa{
-  font-size: 2em;
-}
 .contact-item .title{
   width: 80%;
   width: calc(100% - 55px);
-  font-size: 1.5em;
-  font-weight: 700;
-  opacity: 0.9;
 }
 .contact-item .title.only{
   margin-top: 10px;
-}
-.contact-item .description{
-  width: 80%;
-  width: calc(100% - 55px);
-  font-size: 1.2em;
-  opacity: 0.7;
 }
 /*******************************************
 SKILLS
@@ -242,13 +134,10 @@ SKILLS
   padding: 5px 5px 5px 25px;
   background: #4c9421;
   position: relative;
-  font-size: 1.2em;
 }
 .skills:before{
   content: "\f05d";
   font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
   position: absolute;
   top: 6px;
   left: 7px;
@@ -257,7 +146,6 @@ SKILLS
 LANGUAGES
 *******************************************/
 #language-skills .skill{
-  font-size: 1.3em;
   margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
@@ -273,13 +161,10 @@ HOBBIES
   padding: 5px 5px 5px 25px;
   background: #A75265;
   position: relative;
-  font-size: 1.2em;
 }
 .hobby:before{
   content: "\f004";
   font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
   position: absolute;
   top: 6px;
   left: 7px;
