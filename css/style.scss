@@ -1,15 +1,17 @@
 ---
 ---
-@import '../_sass/bootstrap';
-@import '../_sass/syntax-highlighting';
 
+@charset "utf-8";
 
-$scotch-primary: rgb(255, 69, 69);
-$scotch-secondary: #FF7B7B;
+@import "kleuren";
 
 %oswald { font-family: 'Oswald', sans-serif; }
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
 
+@import 'bootstrap';
+/*@import 'syntax-highlighting';*/
+
+@import "cv";
 
 body {
     @extend %roboto;
@@ -26,7 +28,7 @@ a {
     outline: none !important;
     text-decoration: none !important;
     transition: all 225ms ease;
-    color: $scotch-secondary;
+    color: $secondair;
 
     &:hover { color: #6165FF; }
 }
@@ -53,7 +55,7 @@ nav.navbar {
 
         i {
             transition: inherit;
-            color: $scotch-primary;
+            color: $primair;
             transform: scale(1);
         }
 
@@ -83,7 +85,7 @@ h1.special {
     font-size: 69px;
     line-height: 69px;
     font-weight: 700;
-    color: $scotch-primary;
+    color: $primair;
 
     span {
         display: inline-block;

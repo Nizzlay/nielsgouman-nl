@@ -43,13 +43,13 @@ EDUCATION
   top: 0;
   content: ' ';
   display: block;
-  background: #ec7263;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#ec7263), color-stop(89%,#ec7263), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
+  background: $secondair;
+  background: -moz-linear-gradient(top,  #ffffff 0%, $secondair2 7%, $secondair 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,$secondair2), color-stop(89%,$secondair), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,$secondair2 7%,$secondair 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,$secondair2 7%,$secondair 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,$secondair2 7%,$secondair 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,$secondair2 7%,$secondair 89%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 #education li{
@@ -109,8 +109,6 @@ CONTACT
 }
 .contact-item .icon{
   padding: 10px;
-  border-right: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
   opacity: 0.2;
 }
 .contact-item:last-child .icon{
@@ -132,7 +130,7 @@ SKILLS
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 5px 5px 5px 30px;
-  background: #4c9421;
+  background: $secondair;
   position: relative;
 }
 .skills:before{
@@ -159,7 +157,7 @@ HOBBIES
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 5px 5px 5px 30px;
-  background: #A75265;
+  background: $secondair;
   position: relative;
 }
 .hobby:before{
