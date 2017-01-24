@@ -55,12 +55,12 @@ nav.navbar {
 
         i {
             transition: inherit;
-            color: $primair;
+            color: $secondair;
             transform: scale(1);
         }
 
         &:hover i {
-            color: rgb(255, 111, 111);
+            color: $secondair2;
             transform: scale(1.35);
         }
     }
