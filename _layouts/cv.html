@@ -14,6 +14,10 @@ layout: compress
                     </div>
                 </div>
             </div>
+            <div class="col-xs-12">
+              <h2>Profiel</h2>
+              <p>Volgens een enquête van monsterboard leest 65% van werkend Nederland maximaal 1 boek per jaar. Ik ben een uitzondering op dat gemiddelde. Je kunt omschrijven als een lifelong learner, ik ben altijd wel een cursus aan het volgen, een boek aan het lezen, of een informatieve podcast aan het luisteren. </p>
+            </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-7">
@@ -48,7 +52,31 @@ layout: compress
                         </li>
                     </ul>
                 </div>
+                <!-- CURSUSSEN -->
+                <div class="box">
+                    <h2>Cursussen &amp; Trainingen</h2>
+                    <div class="col-xs-12 col-sm-6">
+                      <ul>
+                    {% for item in site.data.trainingen %}
+                      {% assign loopindex = forloop.index | modulo: 2 %}
+                      {% if loopindex == 1 %}
+                      <li>{{ item.text }}</li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <ul>
+                {% for item in site.data.trainingen %}
+                  {% assign loopindex = forloop.index | modulo: 2 %}
+                  {% if loopindex == 0 %}
+                  <li>{{ item.text }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
             </div>
+            </div>
+          </div>
             <div class="col-xs-12 col-sm-5">
                 <!-- CONTACT -->
                 <div class="box clearfix">
@@ -73,6 +101,10 @@ layout: compress
                         <div class="icon pull-left text-center"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
                         <div class="title only pull-right"><a href="http://www.linkedin.com/in/NielsGouman">LinkedIn</a></div>
                     </div>
+                    <div class="contact-item">
+                        <div class="icon pull-left text-center"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <div class="title only pull-right"><a href="/downloads/CV.pdf">Download CV</a></div>
+                    </div>
                 </div>
                 <!-- SKILLS -->
                 <div class="box">
@@ -95,6 +127,19 @@ layout: compress
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- SPORT -->
+                <div class="box">
+                    <h2>Sport</h2>
+                    <h3>Karate (2e kyu kyokushin)</h3>
+                    <p>Begonnen toen ik een jaar of 8 was, lid geweest van verschillende sportscholen, nooit mee gestopt. De discipline, diepgang, etiquette, en (fysieke) uitdaging spreken mij enorm aan. Momenteel train ik kyokushin (volcontact) karate bij Omegasport in Dordrecht en heb ik de graad van 2e kyu behaald.</p>
+                </div>
+                <!-- EIGENSCHAPPEN -->
+                <div class="box">
+                    <h2>Eigenschappen</h2>
+                    {% for item in site.data.eigenschappen %}
+                    <div class="hobby">{{ item.text }}</div>
+                    {% endfor %}
                 </div>
                 <!-- HOBBIES -->
                 <div class="box">
