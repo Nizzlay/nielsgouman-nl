@@ -158,82 +158,33 @@ layout: compress
             <div class="col-xs-12">
                 <div class="box">
                     <h2>Ervaring</h2>
+                    {% for item in site.data.ervaring %}
                     <div class="job clearfix">
                         <div class="col-xs-3">
-                            <div class="where"><h3>Strategisch Lui</h3></div>
-                            <div class="year">2010 - 2017</div>
+                            <div class="where"><h3>{{ item.waar }}</h3></div>
+                            <div class="year"><p>{{ item.jaar }}</p></div>
                         </div>
                         <div class="col-xs-9">
-                            <div class="profession"><h3>Zelfstandig ondernemer</h3></div>
-                            <div class="description"><p>Als zelfstandige hielp ik andere zelfstandigen tijd te besparen. Ik gaf trainingen over timemanagement, lifehacking, (bedrijfs)processen en digitale vaardigheden.</p></div>
+                            <div class="profession"><h3>{{ item.beroep }}</h3></div>
+                            <div class="description"><p>{{ item.omschrijving }}</p></div>
                         </div>
                     </div>
+                    {% endfor %}
+                </div>
+                <div class="box">
+                    <h2>Vrijwilligerswerk</h2>
+                    {% for item in site.data.vrijwilligerswerk %}
                     <div class="job clearfix">
                         <div class="col-xs-3">
-                            <div class="where"><h3>Kennisnet Innovatie</h3></div>
-                            <div class="year">2012 - 2014</div>
+                            <div class="where"><h3>{{ item.waar }}</h3></div>
+                            <div class="year"><p>{{ item.jaar }}</p></div>
                         </div>
                         <div class="col-xs-9">
-                            <div class="profession"><h3>#4T2</h3></div>
-                            <div class="description"><p>In het innovatieprogramma van Kennisnet onderzochten we de relevantie, haalbaarheid en toepasbaarheid van nieuwe ict-technologieën voor het onderwijs. Samen met een groep van 42 mensen gaven we vorm aan de innovatieagenda van
-                                Kennisnet. Deze denktank, #4T2 genaamd, bestond uit onderwijsbestuurders, docenten, wetenschappers, kunstenaars, mediaprofessionals en ondernemers.</p> </div>
+                            <div class="profession"><h3>{{ item.beroep }}</h3></div>
+                            <div class="description"><p>{{ item.omschrijving }}</p></div>
                         </div>
                     </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><h3>Kennisnet Innovatie</h3></div>
-                            <div class="year">2011</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession"><h3>21 Learners of the 21st Century</h3></div>
-                            <div class="description"><p>Als één van de "21 learners" hielp ik Kennisnet om de "21st century skills" ( Samenwerken, Probleem oplossend vermogen, ICT-geletterdheid, Creativiteit, Kritisch denken, Communiceren, Productiviteit) te concretiseren voor het
-                                onderwijs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><h3>ManualMaster</h3></div>
-                            <div class="year">2011</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession"><h3>Trainer / Consultant</h3></div>
-                            <div class="description"><p>Als Trainer/Consultant bij ManualMaster ging ik langs bij klanten om hun te helpen met het inrichten van de kwaliteitsmanagement software. Ook gaf ik trainingen aan (nieuwe) klanten om hen te leren met de software om te gaan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><h3>7 Days of Inspiration</h3></div>
-                            <div class="year">2010 - 2011</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession"><h3>Stadscoördinator Dordrecht &amp; Rotterdam</h3></div>
-                            <div class="description"><p>Nederland werd in een week tijd een stukje ge-upgrade. Het initiatief 7 Days of Inspiration begon als experiment, groeide uit tot maar liefst 137 maatschappelijke initiatieven. We hebben laten zien wat je kunt bereiken zonder
-                                geld, mét gebruik van sociale overwaarde. Als stadscoördinator was ik de manager van Rotterdam (en later ook Dordrecht). Ik regelde alle bijeenkomsten (zonder geld!), en zorgde dat onderlinge contacten werden gelegd.</p> </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><h3>Seagull Software</h3></div>
-                            <div class="year">2008 - 2009</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession"><h3>Software Engineer</h3></div>
-                            <div class="description"><p>Bij Seagull ontwikkelde ik (Java) een Server Management Console plugin die gebruikt zou gaan worden binnen de LegaSuite (Eclipse) omgeving.</p></div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><h3>TAG Software &amp; Consultancy</h3></div>
-                            <div class="year">2007 - 2008</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession"><h3>Software Engineer</h3></div>
-                            <div class="description"><p>Bij TAG Software &amp; Consultancy ontwikkelde ik de teken applets (Java) binnen de TAG Online Quality Manager. Ik heb voornamelijk gewerkt aan de Java applets voor het tekenen van flowcharts, later kwam daar ook de applet
-                                voor het tekenen van organogrammen bij.</p> </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
