@@ -9,15 +9,10 @@ layout: compress
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-
-
                     {{ content }}
-                    {% if page.is_post%}
-                    {% include disqus.html %}
-                    {% endif}
                 </div>
             </div>
         </div>
     </article>
-
+    {% include disqus.html %}
 {% include footer.html %}
