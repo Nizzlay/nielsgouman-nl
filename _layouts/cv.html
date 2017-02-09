@@ -148,7 +148,7 @@ layout: compress
                 <!-- HOBBIES -->
                 <div class="box">
                     <h2>Hobbies &amp; Interesse's</h2> {% for item in site.data.hobbies %}
-                    <div class="hobby">{{ item.text }}</div>
+                    <div class="hobby" data-toggle="tooltip" data-placement="top" title="{{ item.text }}">{{ item.label }}</div>
                     {% endfor %}
                 </div>
             </div>
