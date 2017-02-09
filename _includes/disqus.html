@@ -1,10 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
 <div id="disqus_thread"></div>
+</div>
+</div>
+</div>
 
 <script>
 
 var disqus_config = function () {
-this.page.url = {{ page.url | absolute_url }};
-this.page.identifier = {{ page.id }};
+this.page.url = "{{ page.url | absolute_url }}";
+this.page.identifier = "{{ page.id }}";
 };
 
 (function() {
