@@ -4,3 +4,5 @@ _site
 .DS_Store
 *.swp
 _data/global.yml
+
+_data/global.yml
