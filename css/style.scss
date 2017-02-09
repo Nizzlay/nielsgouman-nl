@@ -6,15 +6,15 @@ sitemap:
 
 @charset "utf-8";
 
-@import "kleuren";
+@import "bootstrap", "kleuren", "syntax-highlighting", "cv";
 
-%oswald { font-family: 'Oswald', sans-serif; }
-%roboto { font-family: 'Roboto Condensed', sans-serif; }
+%oswald {
+    font-family: 'Oswald', sans-serif;
+}
 
-@import 'bootstrap';
-/*@import 'syntax-highlighting';*/
-
-@import "cv";
+%roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 body {
     @extend %roboto;
@@ -23,28 +23,52 @@ body {
     padding-top: 51px;
     -webkit-font-smoothing: antialiased;
 }
+
 p {
     margin-bottom: 30px;
 }
-section, header, footer, main, article, nav, aside { position: relative; }
+
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+    position: relative;
+}
+
 a {
     outline: none !important;
     text-decoration: none !important;
     transition: all 225ms ease;
     color: $secondair;
 
-    &:hover { color: #6165FF; }
+    &:hover {
+        color: #6165FF;
+    }
 }
+
 .btn {
     text-transform: uppercase;
     font-weight: 400;
     @extend %oswald;
 }
-h1, h2, h3, h4, h5, h6 { @extend %oswald; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %oswald;
+}
+
 ::selection {
     background: #086AFF;
     color: #fff;
 }
+
 nav.navbar {
     margin: 0;
 
@@ -68,6 +92,7 @@ nav.navbar {
         }
     }
 }
+
 .title-group {
     text-align: center;
     padding: 0 15px;
@@ -78,6 +103,7 @@ nav.navbar {
         margin: 25px auto 0;
     }
 }
+
 h1.special {
     position: relative;
     text-align: center;
@@ -96,7 +122,8 @@ h1.special {
         padding: 0 15px;
         max-width: 1000px;
 
-        &:before, &:after {
+        &:after,
+        &:before {
             content: '';
             position: absolute;
             display: block;
@@ -107,8 +134,13 @@ h1.special {
             transform: translateY(-50%);
         }
 
-        &:before { left: 100%; }
-        &:after { right: 100%; }
+        &:before {
+            left: 100%;
+        }
+
+        &:after {
+            right: 100%;
+        }
     }
 }
 
@@ -117,7 +149,9 @@ h1.special {
     box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
     margin-bottom: 125px;
 
-    .inner-guts { padding: 50px; }
+    .inner-guts {
+        padding: 50px;
+    }
 
     h2 {
         margin: 0;
@@ -276,22 +310,20 @@ aside {
 pre {
     margin: 75px -100px;
 }
-
-
 @media only screen and (max-width : 991px) {
     pre {
         margin-left: 0;
         margin-right: 0;
     }
 }
-
 @media only screen and (max-width : 480px) {
-    .tile .featurette, .topper {
+    .tile .featurette,
+    .topper {
         height: 300px;
     }
 
-    h1.special,
-    .tile h2 {
+    .tile h2,
+    h1.special {
         font-size: 40px;
         line-height: 44px;
     }
