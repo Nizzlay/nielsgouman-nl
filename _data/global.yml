@@ -1,0 +1,8 @@
+# Site Settings
+title: 'Niels Gouman'
+description: 'Een digital native gefascineerd met digitalisering en efficiëntie.'
+url: 'http://nielsgouman.nl' # the base hostname & protocol for your site
+
+# Admin Settings
+admin_name: 'Niels Gouman'
+admin_email: 'mail@NielsGouman.nl'
