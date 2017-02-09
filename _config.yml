@@ -8,6 +8,16 @@ sass:
   style: compressed
 # collections: null
 
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
 # Handling Reading
 safe:         false
 include:      [".htaccess"]
