@@ -14,5 +14,7 @@ layout: compress
             </div>
         </div>
     </article>
+    {% if page.id %}
     {% include disqus.html %}
+    {% endif}
 {% include footer.html %}
