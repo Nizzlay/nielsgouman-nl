@@ -6,3 +6,15 @@ url: 'http://nielsgouman.nl' # the base hostname & protocol for your site
 # Admin Settings
 admin_name: 'Niels Gouman'
 admin_email: 'mail@NielsGouman.nl'
+
+# Jekyll-SEO-Tag
+author:
+  twitter: NielsGouman
+
+social:
+  name: Niels Gouman
+  links:
+    - https://twitter.com/NielsGouman
+    - https://www.facebook.com/NielsGouman
+    - https://www.linkedin.com/in/NielsGouman
+    - https://plus.google.com/+NielsGouman
