@@ -12,6 +12,9 @@ layout: compress
 
 
                     {{ content }}
+                    {% if page.is_post%}
+                    {% include disqus.html %}
+                    {% end if}
                 </div>
             </div>
         </div>
