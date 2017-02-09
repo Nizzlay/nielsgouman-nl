@@ -24,7 +24,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      [jemoji]
+gems:      [jekyll-seo-tag, jemoji]
 
 # Conversion
 markdown:    kramdown
