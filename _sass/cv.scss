@@ -168,6 +168,25 @@ HOBBIES
   left: 7px;
 }
 /*******************************************
+EIGENSCHAPPEN
+*******************************************/
+.kenmerk{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 30px;
+  background: $secondair;
+  position: relative;
+}
+.kenmerk:before{
+  content: "\f12e";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+/*******************************************
 MEDIA
 *******************************************/
 @media (min-width: 500px) {
