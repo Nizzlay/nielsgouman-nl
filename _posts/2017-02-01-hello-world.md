@@ -1,15 +1,14 @@
 ---
 layout: inner
-title: 'My First Post on Jekyll'
-date: 2015-08-31 13:26:34
-categories: blog development
-tags: cats dogs code
-featured_image: 'http://orig02.deviantart.net/5929/f/2012/095/e/f/vegito_by_jamey4-d4v37rn.png'
-lead_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores quisquam id sunt, a architecto molestias velit, distinctio quidem non, nostrum provident quibusdam enim. Neque ipsam temporibus commodi facere minima.'
+title: 'Hello World!'
+date: 2017-02-01 14:56
+categories: Random
+tags: 
+featured_image: 
+lead_text: 
 ---
 
 Tududu :-)
-:+1:
 
 Steve Austin: Astronaut. A man barely alive. Gentlemen... we can rebuild him. We have the technology. We have the capability to make the world's first bionic man. Steve Austin will be that man. Better than he was before. Better. Stronger. Faster.
 
