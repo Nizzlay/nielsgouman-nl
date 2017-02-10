@@ -29,6 +29,8 @@
                 <span>{{ category }}</span>
             {% endfor %}
         {% endif %}
+        &middot;
+        <a href="{{ page.url | absolute_url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"></a>
     </aside>
     {% endif %}
     <p class="lead">
