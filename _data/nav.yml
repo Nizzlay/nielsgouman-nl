@@ -1,4 +1,4 @@
 main:
-    - { url: '/over', text: 'Over' }
-    - { url: '/blog', text: 'Blog' }
-    - { url: '/contact', text: 'Contact' }
+    - { url: '/over/', text: 'Over' }
+    - { url: '/blog/', text: 'Blog' }
+    - { url: '/contact/', text: 'Contact' }

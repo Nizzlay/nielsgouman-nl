@@ -36,11 +36,11 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li {% if page.url == "/" %} class="active" {% endif %}>
                       <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
                     </li>
                     {% for item in site.data.nav.main %}
-                        <li>
+                        <li {% if page.url == item.url %} class="active" {% endif %}>
                             <a href="{{ item.url }}">{{ item.text }}</a>
                         </li>
                     {% endfor %}
