@@ -3,4 +3,3 @@ _site
 .sass-cache
 .DS_Store
 *.swp
-_data/global.yml
